@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FYP Proposal — AI Study Planning System</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <p class="hint">← → or Space to navigate · F for fullscreen</p>
+
+  <div id="deck" aria-live="polite">
+    <!-- Slide 1: Title -->
+    <section class="slide slide-title active" data-slide="1">
+      <h1>AI-Driven Adaptive Study Planning<br />&amp; Academic Assistance System</h1>
+      <div class="ribbon">
+        <p class="subtitle">Final Year Project Proposal</p>
+      </div>
+      <p class="meta">Presented by: [Your Name] &nbsp;|&nbsp; Supervisor: [Supervisor Name] &nbsp;|&nbsp; Department of Computer Science</p>
+      <p class="tagline">Empowering students through intelligent, compassionate academic support</p>
+    </section>
+
+    <!-- Slide 2: Agenda -->
+    <section class="slide" data-slide="2">
+      <header class="slide-header">
+        <h2>Presentation Overview</h2>
+        <p>What we will cover today</p>
+      </header>
+      <div class="slide-body">
+        <ul class="bullet-list large">
+          <li>Introduction &amp; motivation</li>
+          <li>Problem statement &amp; objectives</li>
+          <li>Proposed system architecture</li>
+          <li>Methodology &amp; technology stack</li>
+          <li>Best-practice case study insights</li>
+          <li>Timeline &amp; cost plan (2-month modules)</li>
+          <li>Expected outcomes &amp; conclusion</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Slide 3: Introduction -->
+    <section class="slide" data-slide="3">
+      <header class="slide-header">
+        <h2>Introduction</h2>
+        <p>Why this project matters for students</p>
+      </header>
+      <div class="slide-body">
+        <ul class="bullet-list">
+          <li>Higher-education students struggle with time management and structured study planning.</li>
+          <li>Traditional calendars and to-do apps lack intelligence and context about academic workloads.</li>
+          <li>AI and NLP can interpret assignment documents and generate actionable study insights.</li>
+          <li>Our platform adapts to each student — planning, executing, and optimizing study workflows.</li>
+          <li>Goal: transform passive scheduling into an active, personalized academic companion.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Slide 4: Problem -->
+    <section class="slide" data-slide="4">
+      <header class="slide-header">
+        <h2>Problem Statement</h2>
+        <p>Real challenges students face every semester</p>
+      </header>
+      <div class="slide-body">
+        <ul class="bullet-list">
+          <li>Cannot break complex assignments into manageable, sequenced tasks</li>
+          <li>Poor prioritization → missed deadlines and last-minute stress</li>
+          <li>No clear guidance on how to start or approach new assignments</li>
+          <li>Unstructured exam preparation without personalized revision plans</li>
+          <li>No system that learns from behaviour and adapts over time</li>
+          <li>Existing tools are passive — they store tasks but do not assist thinking</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Slide 5: Objectives -->
+    <section class="slide" data-slide="5">
+      <header class="slide-header">
+        <h2>Project Objectives</h2>
+        <p>Clear, measurable goals</p>
+      </header>
+      <div class="slide-body">
+        <ul class="bullet-list">
+          <li>Process and understand assignment documents (PDF, DOC, images)</li>
+          <li>Build an AI task decomposition and intelligent planning engine</li>
+          <li>Implement adaptive scheduling from deadlines and user behaviour</li>
+          <li>Provide an interactive assistant for execution, research, and outlines</li>
+          <li>Deliver a dedicated Exam Mode with automated study schedules</li>
+          <li>Evaluate impact on time management, productivity, and student wellbeing</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Slide 6: System -->
+    <section class="slide" data-slide="6">
+      <header class="slide-header">
+        <h2>Proposed System</h2>
+        <p>One unified platform — plan, execute, evaluate</p>
+      </header>
+      <div class="slide-body">
+        <div class="card-grid system">
+          <article class="card">
+            <div class="accent teal"></div>
+            <div class="card-inner">
+              <h3>Reminder Mode</h3>
+              <p>Manual tasks &amp; deadlines without AI — quick capture for busy days.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="accent teal-light"></div>
+            <div class="card-inner">
+              <h3>Assignment Mode</h3>
+              <p>Upload PDF/DOC/IMG — AI parses, understands, and plans work.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="accent green"></div>
+            <div class="card-inner">
+              <h3>Exam Mode</h3>
+              <p>Subjects + dates → personalized schedule, revision cycles, spaced repetition.</p>
+            </div>
+          </article>
+          <article class="card row2-left">
+            <div class="accent navy"></div>
+            <div class="card-inner">
+              <h3>Execution Support</h3>
+              <p>Summaries, research directions, outlines, and interactive Q&amp;A while working.</p>
+            </div>
+          </article>
+          <article class="card row2-right">
+            <div class="accent gold"></div>
+            <div class="card-inner">
+              <h3>Adaptive Learning</h3>
+              <p>Monitors completion, delays, and study patterns — adjusts priorities and workload.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 7: Pipeline -->
+    <section class="slide" data-slide="7">
+      <header class="slide-header">
+        <h2>Assignment Processing Pipeline</h2>
+        <p>From upload to daily actionable plan</p>
+      </header>
+      <div class="slide-body">
+        <ul class="bullet-list">
+          <li>Document Parsing — extract text and metadata from uploaded files</li>
+          <li>Understanding Layer (AI) — type, topics, difficulty, estimated effort</li>
+          <li>Task Decomposition — break work into small, achievable sub-tasks</li>
+          <li>Planning Module — timelines, milestones, and daily workload distribution</li>
+          <li>Start Assignment Mode — summaries, research hints, outlines, live assistance</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Slide 8: Methodology -->
+    <section class="slide" data-slide="8">
+      <header class="slide-header">
+        <h2>Development Methodology</h2>
+        <p>Modular &amp; iterative — industry best practice</p>
+      </header>
+      <div class="slide-body">
+        <ul class="bullet-list">
+          <li>Phase 1 — Requirement analysis: user needs, scope, success metrics</li>
+          <li>Phase 2 — System design: architecture, data flow, AI pipelines</li>
+          <li>Phase 3 — Implementation: frontend, backend, database, AI integration</li>
+          <li>Phase 4 — Integration: connect modules; seamless AI + logic interaction</li>
+          <li>Phase 5 — Testing &amp; evaluation: functional tests, student pilots, metrics</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Slide 9: Tech -->
+    <section class="slide" data-slide="9">
+      <header class="slide-header">
+        <h2>Tools &amp; Technologies</h2>
+        <p>Modern, scalable, student-friendly stack</p>
+      </header>
+      <div class="slide-body">
+        <div class="card-grid cols-4" style="margin-bottom: 1rem;">
+          <article class="card">
+            <div class="accent teal"></div>
+            <div class="card-inner"><h3>Frontend</h3><p>HTML, CSS, JavaScript, React</p></div>
+          </article>
+          <article class="card">
+            <div class="accent teal"></div>
+            <div class="card-inner"><h3>Backend</h3><p>Node.js or Django</p></div>
+          </article>
+          <article class="card">
+            <div class="accent teal-light"></div>
+            <div class="card-inner"><h3>Database</h3><p>Firebase or PostgreSQL</p></div>
+          </article>
+          <article class="card">
+            <div class="accent navy"></div>
+            <div class="card-inner"><h3>AI / NLP</h3><p>LLM APIs + document NLP</p></div>
+          </article>
+        </div>
+        <div class="card-grid" style="grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <article class="card">
+            <div class="accent green"></div>
+            <div class="card-inner"><h3>Document Processing</h3><p>PDF / DOC / image parsing libraries</p></div>
+          </article>
+          <article class="card">
+            <div class="accent gold"></div>
+            <div class="card-inner"><h3>Deployment</h3><p>Cloud hosting, secure auth, responsive UI</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 10: Case studies -->
+    <section class="slide" data-slide="10">
+      <header class="slide-header">
+        <h2>Best-Practice Case Study Approach</h2>
+        <p>Learning from proven solutions — applied thoughtfully</p>
+      </header>
+      <div class="slide-body">
+        <div class="card-grid" style="grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 0.85rem;">
+          <article class="card">
+            <div class="accent teal"></div>
+            <div class="card-inner">
+              <h3>Notion AI + Structured Workspaces</h3>
+              <p>Lesson: combine free-form notes with AI-generated task lists.
+Our application: assignment uploads become structured milestones automatically.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="accent teal-light"></div>
+            <div class="card-inner">
+              <h3>Khan Academy / AI Tutors (e.g. Khanmigo)</h3>
+              <p>Lesson: guided, step-by-step help beats generic answers.
+Our application: Start Assignment Mode with outlines and interactive Q&amp;A.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="accent green"></div>
+            <div class="card-inner">
+              <h3>Anki &amp; Spaced Repetition Systems</h3>
+              <p>Lesson: retention improves with scheduled revision cycles.
+Our application: Exam Mode with revision loops and topic prioritization.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="accent navy"></div>
+            <div class="card-inner">
+              <h3>Todoist / Adaptive Productivity Apps</h3>
+              <p>Lesson: reschedule based on real completion behaviour.
+Our application: adaptive learning adjusts priorities and workload intensity.</p>
+            </div>
+          </article>
+        </div>
+        <p class="note italic">Best-case synthesis: proven UX patterns + our unique academic document pipeline</p>
+      </div>
+    </section>
+
+    <!-- Slide 11: Timeline -->
+    <section class="slide" data-slide="11">
+      <header class="slide-header">
+        <h2>Project Timeline</h2>
+        <p>Four 2-month modules — 8 months total</p>
+      </header>
+      <div class="slide-body">
+        <div class="card-grid timeline">
+          <article class="card">
+            <div class="accent teal"></div>
+            <div class="card-inner">
+              <h3>Module 1<br />Months 1–2</h3>
+              <p>Requirements, UI/UX design, architecture &amp; environment setup</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="accent teal-light"></div>
+            <div class="card-inner">
+              <h3>Module 2<br />Months 3–4</h3>
+              <p>Backend APIs, database, document parsing layer</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="accent teal"></div>
+            <div class="card-inner">
+              <h3>Module 3<br />Months 5–6</h3>
+              <p>AI understanding, decomposition, planning &amp; Exam Mode</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="accent teal-light"></div>
+            <div class="card-inner">
+              <h3>Module 4<br />Months 7–8</h3>
+              <p>Integration, testing, deployment &amp; FYP evaluation</p>
+            </div>
+          </article>
+        </div>
+        <p class="note">Each module ends with a review milestone: demo to supervisor, documentation update, and risk check — ensuring steady, stress-free progress for the whole team.</p>
+      </div>
+    </section>
+
+    <!-- Slide 12: Cost table -->
+    <section class="slide" data-slide="12">
+      <header class="slide-header">
+        <h2>Project Cost Plan</h2>
+        <p>Total budget divided across 2-month modules (PKR)</p>
+      </header>
+      <div class="slide-body">
+        <div class="cost-banner">TOTAL ESTIMATED PROJECT COST: PKR 32,000 (≈ PKR 4,000 per month)</div>
+        <table class="cost-table">
+          <thead>
+            <tr>
+              <th>Module</th>
+              <th>Cost Items</th>
+              <th>Amount (PKR)</th>
+              <th>% of Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Module 1 (M1–M2)</td>
+              <td>Design, tools, initial cloud setup</td>
+              <td>6,000</td>
+              <td>19%</td>
+            </tr>
+            <tr>
+              <td>Module 2 (M3–M4)</td>
+              <td>Backend, database, parsing libraries</td>
+              <td>8,500</td>
+              <td>27%</td>
+            </tr>
+            <tr>
+              <td>Module 3 (M5–M6)</td>
+              <td>LLM API usage, AI testing (peak phase)</td>
+              <td>11,000</td>
+              <td>34%</td>
+            </tr>
+            <tr>
+              <td>Module 4 (M7–M8)</td>
+              <td>Hosting, user testing, deployment, reports</td>
+              <td>6,500</td>
+              <td>20%</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="cost-footnote">Includes: cloud hosting, LLM API credits, optional domain, and student pilot incentives. Excludes personal laptop (already available). Costs are conservative estimates — free tiers (Firebase, Gemini) may reduce actual spend in best-case deployment.</p>
+      </div>
+    </section>
+
+    <!-- Slide 13: Cost chart -->
+    <section class="slide" data-slide="13">
+      <header class="slide-header">
+        <h2>Cost Distribution by Module</h2>
+        <p>Where investment goes — transparent planning</p>
+      </header>
+      <div class="slide-body">
+        <div class="chart-layout">
+          <div class="chart-strategy">
+            <h3>Best-case cost strategy</h3>
+            <ul>
+              <li>Use free student / developer tiers for cloud and AI where possible</li>
+              <li>Open-source parsing (pdf.js, mammoth) — zero licensing cost</li>
+              <li>Phase API spending to Module 3 when features are stable</li>
+              <li>Module 4 focuses on polish and evaluation, not heavy new development</li>
+            </ul>
+          </div>
+          <div class="bar-chart" aria-label="Cost by module">
+            <div class="bar-group">
+              <span class="amount">PKR 6,000</span>
+              <div class="bar" data-amount="6000" style="background: var(--teal); height: 55%;"></div>
+              <span class="label">M1–M2</span>
+            </div>
+            <div class="bar-group">
+              <span class="amount">PKR 8,500</span>
+              <div class="bar" data-amount="8500" style="background: var(--teal-light); height: 77%;"></div>
+              <span class="label">M3–M4</span>
+            </div>
+            <div class="bar-group">
+              <span class="amount">PKR 11,000</span>
+              <div class="bar" data-amount="11000" style="background: var(--navy); height: 100%;"></div>
+              <span class="label">M5–M6</span>
+            </div>
+            <div class="bar-group">
+              <span class="amount">PKR 6,500</span>
+              <div class="bar" data-amount="6500" style="background: var(--soft-green); height: 59%;"></div>
+              <span class="label">M7–M8</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 14: Outcomes -->
+    <section class="slide" data-slide="14">
+      <header class="slide-header">
+        <h2>Expected Outcomes</h2>
+        <p>Impact we aim to demonstrate</p>
+      </header>
+      <div class="slide-body">
+        <ul class="bullet-list">
+          <li>Improved academic workload management and reduced last-minute stress</li>
+          <li>Lower procrastination through structured, AI-generated daily plans</li>
+          <li>Faster, clearer assignment completion with guided execution support</li>
+          <li>Smarter exam preparation with personalized, adaptive schedules</li>
+          <li>Measurable gains in productivity and time-management metrics</li>
+          <li>A reusable, modular codebase suitable for future research extensions</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Slide 15: Conclusion -->
+    <section class="slide" data-slide="15">
+      <header class="slide-header">
+        <h2>Conclusion</h2>
+        <p>Bridging traditional tools and intelligent academic assistance</p>
+      </header>
+      <div class="slide-body">
+        <p class="conclusion-text">
+          This project addresses a real, everyday problem for university students — not with another passive calendar, but with an empathetic AI companion that plans, guides, and adapts.<br /><br />
+          By combining proven patterns from leading ed-tech and productivity tools with our own assignment-understanding pipeline, we deliver a practical, research-worthy, and socially meaningful Final Year Project.<br /><br />
+          We respectfully seek your guidance and approval to proceed with development.
+        </p>
+        <p class="thanks">Thank you for your time and support.</p>
+        <p class="qa">Questions &amp; Discussion</p>
+      </div>
+    </section>
+  </div>
+
+  <nav class="controls" aria-label="Slide navigation">
+    <button type="button" id="prev" aria-label="Previous slide">&#8592;</button>
+    <span id="slide-counter">1 / 15</span>
+    <button type="button" id="next" aria-label="Next slide">&#8594;</button>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
